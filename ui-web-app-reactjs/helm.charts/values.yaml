@@ -1,0 +1,18 @@
+
+replicaCount: 1
+
+image:
+  repository: nginx
+  pullPolicy: IfNotPresent
+ 
+
+service:
+  type: NodePort
+  port: 8080
+  name: ui
+  targetport: 80
+
+container: 
+  name: react-ui
+  
+
